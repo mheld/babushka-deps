@@ -13,6 +13,7 @@ pkg 'curl' do
 end
 pkg 'gettext', :for => :linux
 pkg 'erlang'
+pkg 'emacs'
 pkg 'freeimage' do
   installs {
     via :apt, %w[libfreeimage3 libfreeimage-dev]
@@ -93,3 +94,4 @@ pkg 'zlib headers' do
   installs { via :apt, 'zlib1g-dev' }
   provides []
 end
+pkg 'zsh'
